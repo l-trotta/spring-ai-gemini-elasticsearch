@@ -8,10 +8,10 @@ import org.springframework.stereotype.Service;
 public class RagService {
 
     // Both beans autowired from default configuration
-    private ElasticsearchVectorStore vectorStore;
+    private VectorStore vectorStore;
     private ChatClient chatClient;
 
-    public RagService(ElasticsearchVectorStore vectorStore, ChatClient.Builder clientBuilder) {
+    public RagService(VectorStore vectorStore, ChatClient.Builder clientBuilder) {
         this.vectorStore = vectorStore;
         this.chatClient = clientBuilder
             .build();
