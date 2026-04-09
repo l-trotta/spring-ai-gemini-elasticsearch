@@ -1,7 +1,7 @@
 package demo.elastic.rag;
 
 import org.springframework.ai.chat.client.ChatClient;
-import org.springframework.ai.vectorstore.elasticsearch.ElasticsearchVectorStore;
+import org.springframework.ai.vectorstore.VectorStore;
 import org.springframework.stereotype.Service;
 
 @Service
